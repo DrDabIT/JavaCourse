@@ -1,5 +1,3 @@
-package JavaCourse.CourseCode;
-
 public class Decimals {
     public static void main(String[] args) {
         //Use double for math

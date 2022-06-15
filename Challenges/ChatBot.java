@@ -1,4 +1,3 @@
-package JavaCourse.Challenges;
 import java.util.Scanner;
 
 public class ChatBot {

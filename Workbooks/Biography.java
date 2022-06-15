@@ -1,4 +1,3 @@
-package JavaCourse.Workbooks;
 public class Biography {
     public static void main(String[] args) {
         String name = "Arnesh";

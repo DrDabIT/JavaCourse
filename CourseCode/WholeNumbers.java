@@ -1,5 +1,3 @@
-package JavaCourse.CourseCode;
-
 public class WholeNumbers {
     public static void main(String[] args) {
         int numberOfFans = 5000;

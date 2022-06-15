@@ -1,5 +1,3 @@
-package JavaCourse.Workbooks;
-
 public class Points {
     public static void main(String[] args) {
         int points = 0;

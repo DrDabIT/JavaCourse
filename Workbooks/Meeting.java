@@ -1,5 +1,3 @@
-package JavaCourse.Workbooks;
-
 public class Meeting {
     public static void main(String[] args) {
         double sales = 24309.65; 

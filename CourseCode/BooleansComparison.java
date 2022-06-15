@@ -1,5 +1,3 @@
-package JavaCourse.CourseCode;
-
 public class BooleansComparison {
     public static void main(String[] args) {
         int chemistryGrade = 95;

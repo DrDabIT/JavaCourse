@@ -1,5 +1,3 @@
-package JavaCourse.Workbooks;
-
 import java.util.Scanner;
 
 public class SignUp {

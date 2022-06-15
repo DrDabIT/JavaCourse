@@ -1,6 +1,3 @@
-package JavaCourse.CourseCode;
-
-
 import java.util.Scanner;
 
 public class Survey {
