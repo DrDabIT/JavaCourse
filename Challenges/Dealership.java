@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.lang.model.util.ElementScanner6;
-
 public class Dealership {
     public static void main(String[] args) {
         
@@ -37,7 +35,18 @@ public class Dealership {
                 System.out.println("We do not sell cars under $10000! Sorry!");
             }
             break;
-            case "b": System.out.println("You chose option " + option); break;
+            case "b": System.out.println("\nWhat is your car valued at?");
+            int value = scan.nextInt();
+            System.out.println("\nHow much are you selling it for?");
+            int price = scan.nextInt();
+            
+            if (value > price && price < 30000){
+                System.out.println("\nWe will buy you car. Pleasure doing buisness with you!");
+            }
+            else{
+                System.out.println("\nSorry! We're not interested.");
+            }
+            break;
             default: System.out.println("Invalid Option");
         }
         scan.close();
