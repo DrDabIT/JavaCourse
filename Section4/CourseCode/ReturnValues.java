@@ -16,6 +16,11 @@ public class ReturnValues {
     }
 
     public static double measureRectangle(double length, double width, String option){
+        if (length < 0 || width < 0) {
+            System.out.println("length or width cannot be negative");
+            System.exit(0);
+        }
+
         switch (option) {
             case "area": return length * width; 
             case "perimeter": return 2 * (length + width);
@@ -24,9 +29,9 @@ public class ReturnValues {
         }
     }
 
-    public static void stringPrinter(double length, double width, double area, String option){
+    public static void stringPrinter(double length, double width, double measure, String option){
         System.out.println("The " + option + " of a rectangle with length " + length + 
-        " and with width " + width + " is equal to " + area + "\n");
+        " and with width " + width + " is equal to " + measure + "\n");
     }
 
 }
