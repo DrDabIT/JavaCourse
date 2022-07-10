@@ -12,12 +12,17 @@ public class Blackjack {
         String start = scan.nextLine();
         //Task 3 – Wait for the user to press enter.
         //Task 4 – Get two random cards.
-        System.out.print("\n You get a \n" + drawRandomCard() + "\n and a \n" + drawRandomCard());
+        int card1 = drawRandomCard();
+        int card2 = drawRandomCard();
+
+        System.out.print("\n You get a \n" + cardString(card1) + "\n and a \n" + cardString(card2));
 
         //       – Print them: \n You get a \n" + <randomCard> + "\n and a \n" + <randomCard>
 
         //Task 5 – Print the sum of your hand value.
         //       – print: your total is: <hand value>
+        int total = Math.min(card1, 10) + Math.min(card2, 10);
+        System.out.print("Your total is: " + total);
 
         
         //Task 6 – Get two random cards for the dealer.
