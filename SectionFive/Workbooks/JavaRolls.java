@@ -22,7 +22,11 @@ public class JavaRolls {
               2. Get the user to enter any value
         */
 
-        System.out.println("Great");
+        System.out.println("Great, here are the rules");
+        System.out.println("\nIf you roll a 6, the game stops. If you roll a 4 nothing happens.");
+        System.out.println("Otherwise, you get 1 point. \n");
+        System.out.println("You must collet at least 3 points to win. Enter anything to roll");
+        String roll1 = scan.nextLine();
 
        int score = 0;
       
