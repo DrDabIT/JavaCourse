@@ -26,15 +26,29 @@ public class JavaRolls {
         System.out.println("\nIf you roll a 6, the game stops. If you roll a 4 nothing happens.");
         System.out.println("Otherwise, you get 1 point. \n");
         System.out.println("You must collet at least 3 points to win. Enter anything to roll");
-        String roll1 = scan.nextLine();
 
        int score = 0;
+
+       while (true) {
+        scan.nextLine();
+        System.out.print("You rolled a " + rollDice());
+        if (diceRoll == 6) {
+            System.out.println("End of game.");
+            break;
+        } else if (diceRoll == 4) {
+            System.out.println("Zero points. Keep rolling.");
+        } else {
+            score++;
+            System.out.println("One point. Keep rolling.");    
+        }
+       }
       
        /* 
          Task 3
           1. Make a while loop that runs forever
           2. During each run, get them to enter a random value
           
+    
           
           Task 5
            1. During each run, call the rollDice() function.
@@ -76,6 +90,11 @@ public class JavaRolls {
      * @return randomNumber (int)
      * 
      */ 
-  
+    
+     public static int rollDice() {
+        int randomNumber = (int) Math.random() * 6;
+        randomNumber++;
+        return (int) randomNumber;
+     }
   
 }
