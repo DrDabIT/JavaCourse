@@ -12,6 +12,8 @@ public class Blackjack {
         String start = scan.nextLine();
         //Task 3 – Wait for the user to press enter.
         //Task 4 – Get two random cards.
+        System.out.print("\n You get a \n" + drawRandomCard() + "\n and a \n" + drawRandomCard());
+
         //       – Print them: \n You get a \n" + <randomCard> + "\n and a \n" + <randomCard>
 
         //Task 5 – Print the sum of your hand value.
