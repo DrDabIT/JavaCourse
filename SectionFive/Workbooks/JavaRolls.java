@@ -32,16 +32,25 @@ public class JavaRolls {
        while (true) {
         scan.nextLine();
         System.out.print("You rolled a " + rollDice());
-        if (diceRoll == 6) {
+        if (rollDice() == 6) {
             System.out.println("End of game.");
             break;
-        } else if (diceRoll == 4) {
+        } else if (rollDice() == 4) {
             System.out.println("Zero points. Keep rolling.");
         } else {
             score++;
             System.out.println("One point. Keep rolling.");    
         }
        }
+
+       System.out.println("\nYour score is: " + score);
+
+        if (score >= 3) {
+            System.out.println("Wow, that's lucky. You win!");
+        } else {
+            System.out.println("Tough luck, you lose :( ");
+        }
+        scan.close();
       
        /* 
          Task 3
