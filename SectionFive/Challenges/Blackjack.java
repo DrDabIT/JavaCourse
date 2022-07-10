@@ -9,6 +9,7 @@ public class Blackjack {
         System.out.println("Do you have a knack for Black Jack?");
         System.out.println("We shall see..");
         System.out.println("..Ready? Press anything to begin!");
+        String start = scan.nextLine();
         //Task 3 – Wait for the user to press enter.
         //Task 4 – Get two random cards.
         //       – Print them: \n You get a \n" + <randomCard> + "\n and a \n" + <randomCard>
