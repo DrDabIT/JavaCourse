@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class Tax {
     public static void main(String[] args) {
         double[] price = {1.99, 2.99, 3.99, 4.99};
@@ -17,7 +16,7 @@ public class Tax {
           */
 
           for (int i = 0; i < price.length; i++) {
-            afterTax[i] = (price[i] * 0.13);
+            afterTax[i] = (price[i] * 1.13);
           }
 
          /** Task 3:
@@ -27,6 +26,9 @@ public class Tax {
           *     The prices after tax are: <after tax prices>
           *
           */
+
+          System.out.println("Original Prices: " + Arrays.toString(price));
+          System.out.println("After tax prices: " + Arrays.toString(afterTax));
 
     }
 }
