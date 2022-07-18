@@ -6,9 +6,20 @@ public class TDArrays {
             {65, 64, 61, 67},
             {95, 98, 99, 100}
         };
+                                    //3
+        for (int i = 0; i < grades.length; i++) {
 
-        System.out.println("\tHarry: "+ grades[0][0] + " " + grades[0][1] + " " + grades[0][2] + " " + grades[0][3]);
-        System.out.println("\tRon: "+ grades[1][0] + " " + grades[1][1] + " " + grades[1][2] + " " + grades[1][3]);
-        System.out.println("\tHermione: "+ grades[2][0] + " " + grades[2][1] + " " + grades[2][2] + " " + grades[2][3]);
+            switch (i) {
+                case 0: System.out.print("Harry: "); break;
+                case 1: System.out.print("Ron: "); break;
+                case 2: System.out.print("Hermione: "); break;
+            }
+            for (int j = 0; j < grades[i].length; j++) {
+                System.out.print(grades[i][j] + " ");
+            }
+            System.out.print("\n");
+        }
+
+
     }
 }
