@@ -28,7 +28,7 @@ public class Weather {
      public static double[] celciusToFahrenheit(double[] celsius){
         double[] fahrenheit = Arrays.copyOf(celsius, celsius.length);
         for (int i = 0; i < celsius.length; i++) {
-            celsius[i] = celsius[i]/5 *9;
+            celsius[i] = celsius[i]/5 * 9 + 32;
         }
         return fahrenheit;
      }
