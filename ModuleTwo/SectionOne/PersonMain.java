@@ -4,11 +4,13 @@ public class PersonMain {
 
 
       Person person = new Person("Arnesh", "08/05/2009", "Indian", 6);
+      
+      person.setseatNumber(10);
 
-      System.out.println("Name: " + person.name +
-      "\nDate Of Birth: " + person.dateOfBirth + 
-      "\nNationality: " + person.nationality + 
-      "\nSeat Number: " + person.seatNumber);
+      System.out.println("Name: " + person.getName() +
+      "\nDate Of Birth: " + person.getdateOfBirth() + 
+      "\nNationality: " + person.getNationality() + 
+      "\nSeat Number: " + person.getseatNumber());
     }
   
   
